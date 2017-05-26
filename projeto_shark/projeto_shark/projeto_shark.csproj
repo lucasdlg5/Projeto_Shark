@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_lista_produtos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_lista_produtos.Designer.cs">
+      <DependentUpon>frm_lista_produtos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +65,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_lista_produtos.resx">
+      <DependentUpon>frm_lista_produtos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_principal.resx">
       <DependentUpon>frm_principal.cs</DependentUpon>
     </EmbeddedResource>

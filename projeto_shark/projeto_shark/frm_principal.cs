@@ -16,7 +16,7 @@ namespace projeto_shark
         {
             InitializeComponent();
             Form splash = new frm_splash();
-            splash.ShowDialog();
+            //splash.ShowDialog();
 
         }
 
@@ -33,6 +33,18 @@ namespace projeto_shark
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void produtosCadastradosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form lista_produtos = new frm_lista_produtos();
+            lista_produtos.Show();
+        }
+
+        private void listaDeProdutosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form lista_produtos = new frm_lista_produtos();
+            lista_produtos.Show();
         }
     }
 }
