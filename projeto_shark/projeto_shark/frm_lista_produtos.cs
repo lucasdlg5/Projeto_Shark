@@ -19,6 +19,8 @@ namespace projeto_shark
 
         private void frm_lista_produtos_Load(object sender, EventArgs e)
         {
+            // TODO: esta linha de código carrega dados na tabela 'bd_sharkDataSet1.Table'. Você pode movê-la ou removê-la conforme necessário.
+            this.tableTableAdapter.Fill(this.bd_sharkDataSet1.Table);
 
         }
 
