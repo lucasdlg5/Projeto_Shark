@@ -9,3 +9,5 @@ C:\Users\Lucasdlg\Desktop\Projeto_Shark\projeto_shark\projeto_shark\obj\Debug\pr
 C:\Users\Lucasdlg\Desktop\Projeto_Shark\projeto_shark\projeto_shark\obj\Debug\projeto_shark.exe
 C:\Users\Lucasdlg\Desktop\Projeto_Shark\projeto_shark\projeto_shark\obj\Debug\projeto_shark.pdb
 C:\Users\Lucasdlg\Desktop\Projeto_Shark\projeto_shark\projeto_shark\obj\Debug\projeto_shark.frm_lista_produtos.resources
+C:\Users\Lucasdlg\Desktop\Projeto_Shark\projeto_shark\projeto_shark\bin\Debug\bd_shark.mdf
+C:\Users\Lucasdlg\Desktop\Projeto_Shark\projeto_shark\projeto_shark\bin\Debug\bd_shark_log.ldf

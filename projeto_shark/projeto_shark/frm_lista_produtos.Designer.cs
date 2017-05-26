@@ -28,18 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_lista_produtos));
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.lst_observacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lst_data_compra = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lst_fornecedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lst_quantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lst_model_produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lst_produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grid_produtos = new System.Windows.Forms.DataGridView();
+            this.bd_sharkDataSet = new projeto_shark.bd_sharkDataSet();
+            this.bdsharkDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid_produtos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bd_sharkDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdsharkDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -63,56 +62,28 @@
             this.toolStripStatusLabel1.Text = "Total de items: 0";
             this.toolStripStatusLabel1.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
             // 
-            // lst_observacao
-            // 
-            this.lst_observacao.HeaderText = "Observacoes";
-            this.lst_observacao.Name = "lst_observacao";
-            // 
-            // lst_data_compra
-            // 
-            this.lst_data_compra.HeaderText = "Data da Compra";
-            this.lst_data_compra.Name = "lst_data_compra";
-            // 
-            // lst_fornecedor
-            // 
-            this.lst_fornecedor.HeaderText = "Fornecedor";
-            this.lst_fornecedor.Name = "lst_fornecedor";
-            // 
-            // lst_quantidade
-            // 
-            this.lst_quantidade.HeaderText = "Quantidade";
-            this.lst_quantidade.Name = "lst_quantidade";
-            // 
-            // lst_model_produto
-            // 
-            this.lst_model_produto.HeaderText = "Modelo";
-            this.lst_model_produto.Name = "lst_model_produto";
-            // 
-            // lst_produto
-            // 
-            this.lst_produto.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.lst_produto.HeaderText = "Produto";
-            this.lst_produto.Name = "lst_produto";
-            this.lst_produto.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.lst_produto.Width = 69;
-            // 
             // grid_produtos
             // 
+            this.grid_produtos.AutoGenerateColumns = false;
             this.grid_produtos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grid_produtos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grid_produtos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.lst_produto,
-            this.lst_model_produto,
-            this.lst_quantidade,
-            this.lst_fornecedor,
-            this.lst_data_compra,
-            this.lst_observacao});
+            this.grid_produtos.DataSource = this.bd_sharkDataSet;
             this.grid_produtos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grid_produtos.Location = new System.Drawing.Point(0, 0);
             this.grid_produtos.Name = "grid_produtos";
             this.grid_produtos.Size = new System.Drawing.Size(676, 426);
             this.grid_produtos.TabIndex = 0;
             this.grid_produtos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_produtos_CellContentClick);
+            // 
+            // bd_sharkDataSet
+            // 
+            this.bd_sharkDataSet.DataSetName = "bd_sharkDataSet";
+            this.bd_sharkDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bdsharkDataSetBindingSource
+            // 
+            this.bdsharkDataSetBindingSource.DataSource = this.bd_sharkDataSet;
+            this.bdsharkDataSetBindingSource.Position = 0;
             // 
             // frm_lista_produtos
             // 
@@ -130,6 +101,8 @@
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid_produtos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bd_sharkDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdsharkDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -138,12 +111,8 @@
         #endregion
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lst_observacao;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lst_data_compra;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lst_fornecedor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lst_quantidade;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lst_model_produto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lst_produto;
         private System.Windows.Forms.DataGridView grid_produtos;
+        private System.Windows.Forms.BindingSource bdsharkDataSetBindingSource;
+        private bd_sharkDataSet bd_sharkDataSet;
     }
 }
