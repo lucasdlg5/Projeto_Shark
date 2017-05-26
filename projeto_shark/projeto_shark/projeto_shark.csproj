@@ -60,15 +60,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="bd_sharkDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>bd_sharkDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="bd_sharkDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>bd_sharkDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frm_cadastro_produto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cadastro_produto.Designer.cs">
+      <DependentUpon>frm_cadastro_produto.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_lista_produtos.cs">
       <SubType>Form</SubType>
@@ -90,6 +91,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_cadastro_produto.resx">
+      <DependentUpon>frm_cadastro_produto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_lista_produtos.resx">
       <DependentUpon>frm_lista_produtos.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,17 +113,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="bd_sharkDataSet.xsc">
-      <DependentUpon>bd_sharkDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="bd_sharkDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>bd_sharkDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="bd_sharkDataSet.xss">
-      <DependentUpon>bd_sharkDataSet.xsd</DependentUpon>
-    </None>
     <None Include="bd_sharkDataSet1.xsc">
       <DependentUpon>bd_sharkDataSet1.xsd</DependentUpon>
     </None>

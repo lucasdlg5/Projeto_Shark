@@ -16,7 +16,7 @@ namespace projeto_shark
         {
             InitializeComponent();
             Form splash = new frm_splash();
-            //splash.ShowDialog();
+            splash.ShowDialog();
 
         }
 

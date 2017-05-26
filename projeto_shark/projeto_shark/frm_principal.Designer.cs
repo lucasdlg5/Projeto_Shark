@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_principal));
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.toolStripSplitButton2 = new System.Windows.Forms.ToolStripDropDownButton();
             this.adicionarVendaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.adicionarProdutoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,6 +39,7 @@
             this.listaDeProdutosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSplitButton1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.adicionarVendaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -56,18 +56,6 @@
             this.statusStrip1.Size = new System.Drawing.Size(682, 22);
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "Gerenciar Vendas";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::projeto_shark.Properties.Resources.Tubarao;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 22);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(682, 389);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // toolStripSplitButton2
             // 
@@ -93,7 +81,7 @@
             this.adicionarProdutoToolStripMenuItem.Image = global::projeto_shark.Properties.Resources.Tubarao;
             this.adicionarProdutoToolStripMenuItem.Name = "adicionarProdutoToolStripMenuItem";
             this.adicionarProdutoToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-            this.adicionarProdutoToolStripMenuItem.Text = "Adicionar Produto";
+            this.adicionarProdutoToolStripMenuItem.Text = "Cadastrar Produto";
             // 
             // produtosCadastradosToolStripMenuItem
             // 
@@ -120,7 +108,7 @@
             this.adicionarToolStripMenuItem.Image = global::projeto_shark.Properties.Resources.Tubarao;
             this.adicionarToolStripMenuItem.Name = "adicionarToolStripMenuItem";
             this.adicionarToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-            this.adicionarToolStripMenuItem.Text = "Adicionar/Remover";
+            this.adicionarToolStripMenuItem.Text = "Cadastrar Produto";
             // 
             // listaDeProdutosToolStripMenuItem
             // 
@@ -147,6 +135,18 @@
             this.adicionarVendaToolStripMenuItem.Name = "adicionarVendaToolStripMenuItem";
             this.adicionarVendaToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.adicionarVendaToolStripMenuItem.Text = "Adicionar Venda";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::projeto_shark.Properties.Resources.Tubarao;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 22);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(682, 389);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // frm_principal
             // 
