@@ -24,5 +24,15 @@ namespace projeto_shark
         {
 
         }
+
+        private void Produtos_ButtonClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
