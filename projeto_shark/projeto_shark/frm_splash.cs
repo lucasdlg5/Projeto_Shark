@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace projeto_shark
 {
-    public partial class Form1 : Form
+    public partial class frm_splash : Form
     {
-        public Form1()
+        public frm_splash()
         {
             InitializeComponent();
+        }
+
+        private void frm_splash_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void timer_splash_Tick(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

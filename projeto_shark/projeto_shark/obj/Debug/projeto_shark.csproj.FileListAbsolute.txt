@@ -1,0 +1,10 @@
+C:\Users\Lucasdlg\Desktop\Projeto_Shark\projeto_shark\projeto_shark\bin\Debug\projeto_shark.exe.config
+C:\Users\Lucasdlg\Desktop\Projeto_Shark\projeto_shark\projeto_shark\bin\Debug\projeto_shark.exe
+C:\Users\Lucasdlg\Desktop\Projeto_Shark\projeto_shark\projeto_shark\bin\Debug\projeto_shark.pdb
+C:\Users\Lucasdlg\Desktop\Projeto_Shark\projeto_shark\projeto_shark\obj\Debug\projeto_shark.csprojResolveAssemblyReference.cache
+C:\Users\Lucasdlg\Desktop\Projeto_Shark\projeto_shark\projeto_shark\obj\Debug\projeto_shark.frm_principal.resources
+C:\Users\Lucasdlg\Desktop\Projeto_Shark\projeto_shark\projeto_shark\obj\Debug\projeto_shark.frm_splash.resources
+C:\Users\Lucasdlg\Desktop\Projeto_Shark\projeto_shark\projeto_shark\obj\Debug\projeto_shark.Properties.Resources.resources
+C:\Users\Lucasdlg\Desktop\Projeto_Shark\projeto_shark\projeto_shark\obj\Debug\projeto_shark.csproj.GenerateResource.Cache
+C:\Users\Lucasdlg\Desktop\Projeto_Shark\projeto_shark\projeto_shark\obj\Debug\projeto_shark.exe
+C:\Users\Lucasdlg\Desktop\Projeto_Shark\projeto_shark\projeto_shark\obj\Debug\projeto_shark.pdb

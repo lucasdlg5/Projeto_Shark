@@ -15,6 +15,14 @@ namespace projeto_shark
         public frm_principal()
         {
             InitializeComponent();
+            Form splash = new frm_splash();
+            splash.ShowDialog();
+
+        }
+
+        private void frm_principal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
