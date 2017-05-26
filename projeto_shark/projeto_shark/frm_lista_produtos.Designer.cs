@@ -29,36 +29,18 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_lista_produtos));
-            this.grid_produtos = new System.Windows.Forms.DataGridView();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.lst_produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lst_model_produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lst_quantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lst_fornecedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lst_data_compra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lst_observacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.grid_produtos)).BeginInit();
+            this.lst_data_compra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lst_fornecedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lst_quantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lst_model_produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lst_produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.grid_produtos = new System.Windows.Forms.DataGridView();
             this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_produtos)).BeginInit();
             this.SuspendLayout();
-            // 
-            // grid_produtos
-            // 
-            this.grid_produtos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.grid_produtos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grid_produtos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.lst_produto,
-            this.lst_model_produto,
-            this.lst_quantidade,
-            this.lst_fornecedor,
-            this.lst_data_compra,
-            this.lst_observacao});
-            this.grid_produtos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grid_produtos.Location = new System.Drawing.Point(0, 0);
-            this.grid_produtos.Name = "grid_produtos";
-            this.grid_produtos.Size = new System.Drawing.Size(676, 426);
-            this.grid_produtos.TabIndex = 0;
-            this.grid_produtos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_produtos_CellContentClick);
             // 
             // statusStrip1
             // 
@@ -81,6 +63,31 @@
             this.toolStripStatusLabel1.Text = "Total de items: 0";
             this.toolStripStatusLabel1.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
             // 
+            // lst_observacao
+            // 
+            this.lst_observacao.HeaderText = "Observacoes";
+            this.lst_observacao.Name = "lst_observacao";
+            // 
+            // lst_data_compra
+            // 
+            this.lst_data_compra.HeaderText = "Data da Compra";
+            this.lst_data_compra.Name = "lst_data_compra";
+            // 
+            // lst_fornecedor
+            // 
+            this.lst_fornecedor.HeaderText = "Fornecedor";
+            this.lst_fornecedor.Name = "lst_fornecedor";
+            // 
+            // lst_quantidade
+            // 
+            this.lst_quantidade.HeaderText = "Quantidade";
+            this.lst_quantidade.Name = "lst_quantidade";
+            // 
+            // lst_model_produto
+            // 
+            this.lst_model_produto.HeaderText = "Modelo";
+            this.lst_model_produto.Name = "lst_model_produto";
+            // 
             // lst_produto
             // 
             this.lst_produto.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
@@ -89,30 +96,23 @@
             this.lst_produto.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.lst_produto.Width = 69;
             // 
-            // lst_model_produto
+            // grid_produtos
             // 
-            this.lst_model_produto.HeaderText = "Modelo";
-            this.lst_model_produto.Name = "lst_model_produto";
-            // 
-            // lst_quantidade
-            // 
-            this.lst_quantidade.HeaderText = "Quantidade";
-            this.lst_quantidade.Name = "lst_quantidade";
-            // 
-            // lst_fornecedor
-            // 
-            this.lst_fornecedor.HeaderText = "Fornecedor";
-            this.lst_fornecedor.Name = "lst_fornecedor";
-            // 
-            // lst_data_compra
-            // 
-            this.lst_data_compra.HeaderText = "Data da Compra";
-            this.lst_data_compra.Name = "lst_data_compra";
-            // 
-            // lst_observacao
-            // 
-            this.lst_observacao.HeaderText = "Observacoes";
-            this.lst_observacao.Name = "lst_observacao";
+            this.grid_produtos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grid_produtos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grid_produtos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.lst_produto,
+            this.lst_model_produto,
+            this.lst_quantidade,
+            this.lst_fornecedor,
+            this.lst_data_compra,
+            this.lst_observacao});
+            this.grid_produtos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grid_produtos.Location = new System.Drawing.Point(0, 0);
+            this.grid_produtos.Name = "grid_produtos";
+            this.grid_produtos.Size = new System.Drawing.Size(676, 426);
+            this.grid_produtos.TabIndex = 0;
+            this.grid_produtos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_produtos_CellContentClick);
             // 
             // frm_lista_produtos
             // 
@@ -127,24 +127,23 @@
             this.Text = "Shark - Lista de Produtos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frm_lista_produtos_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.grid_produtos)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_produtos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView grid_produtos;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lst_produto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lst_model_produto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lst_quantidade;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lst_fornecedor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lst_data_compra;
         private System.Windows.Forms.DataGridViewTextBoxColumn lst_observacao;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lst_data_compra;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lst_fornecedor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lst_quantidade;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lst_model_produto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lst_produto;
+        private System.Windows.Forms.DataGridView grid_produtos;
     }
 }
