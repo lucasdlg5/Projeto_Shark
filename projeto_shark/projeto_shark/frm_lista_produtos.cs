@@ -26,5 +26,10 @@ namespace projeto_shark
         {
 
         }
+
+        private void grid_produtos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
